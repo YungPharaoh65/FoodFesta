@@ -9,3 +9,6 @@ FoodFesta leverages Angular and SCSS to deliver a technically sophisticated yet 
 "FoodFesta: Where Every Bite's a Delight!" _ 
 
 
+![2024-04-20 (6)](https://github.com/YungPharaoh65/FoodFesta/assets/144108667/6a5e43b7-a39e-4048-97e7-b01b035f9ce3)
+![2024-04-20 (1)](https://github.com/YungPharaoh65/FoodFesta/assets/144108667/5053e266-e368-4df0-b77b-059fd017f2eb)
+![2024-04-20 (5)](https://github.com/YungPharaoh65/FoodFesta/assets/144108667/a4de3114-5f66-4980-aacb-e7cc5fc096aa)
