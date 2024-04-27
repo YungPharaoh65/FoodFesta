@@ -1,0 +1,99 @@
+<div class="wrapper">
+  <button class="backbutton" routerLink="" (click)="openSpinner()">
+    <p class="exit">x</p>
+  </button>
+
+  <div class="circleblue">
+    <div class="circle">
+      <div class="positiontext">
+        <p>
+          Variety of Options to <br /><br />
+          choose from with...
+        </p>
+        <br /><br />
+        <h1 class="header">Fast Fooda</h1>
+        <br />
+        <p class="smaller">resturants & takeaways</p>
+        <div class="place">
+          <img src="assets/images/Wavy Buddies Torso.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="awhole4box">
+      <div class="container">
+        <div class="box">
+          <h2>Pizza</h2>
+          <div class="oval">
+            <p class="ovaltext">R6</p>
+            <div class="play">
+              <img
+                src="assets/images/food.icons/Wavy Buddies Pizza.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="move">
+          <div class="box2">
+            <h2>Pizza</h2>
+            <div class="oval">
+              <p class="ovaltext">R6</p>
+              <div class="play">
+                <img
+                  src="assets/images/food.icons/Wavy Buddies Pizza.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box3">
+        <h2>Pizza</h2>
+        <div class="oval">
+          <p class="ovaltext">R6</p>
+          <div class="play">
+            <img src="assets/images/food.icons/Wavy Buddies Pizza.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="move">
+        <div class="box4">
+          <h2>Pizza</h2>
+          <div class="oval">
+            <p class="ovaltext">R6</p>
+            <div class="play">
+              <img
+                src="assets/images/food.icons/Wavy Buddies Pizza.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--awhole4box-->
+
+  <div class="rectangle" routerLink="/orders" (click)="openSpinner()">
+    <p class="text">
+      Find What you like with Fast Fooda. Get the amazing <br />
+      takeaways that not only beat the competition <br />
+      but offer high ranges of...click here to
+      <a href="" routerLink="/orders">see more</a>
+    </p>
+  </div>
+
+  <ngx-spinner
+    bdColor="rgba(51,51,51,0.8)"
+    size="medium"
+    color="#fff"
+    type="ball-running-dots"
+  >
+    <p style="font-size: 20px; color: white">Loading...</p>
+  </ngx-spinner>
+</div>

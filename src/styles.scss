@@ -1,0 +1,23 @@
+// styles.scss
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+
+*,
+*::before,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-bg: white;
+    --color-text:black;
+}
+
+[data-theme="dark"]{
+    --color-bg: rgba(19, 18, 18, 0.336);
+    --color-text:white;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,188 @@
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: hsla(202, 50%, 47%, 0.76);
+    padding: 2rem;
+    color: whitesmoke;
+  }
+
+  .confirmBtn {
+    font-weight: 800;
+    background-color: #da8d00;
+    color: aliceblue;
+    padding: 1.2rem;
+    width: 80%;
+    max-width: 14rem; /* Adjust the max-width as needed */
+    border: none;
+    border-radius: 0.5rem;
+    margin-left: 35rem;
+    cursor: pointer;
+    display: block;
+    margin-top: -3rem;
+     /*this effect works to trasition the button of your */
+     transition-property: transform; 
+     transition-duration: 0.5s; 
+     transition-timing-function: ease ;
+     transition-delay: 0s;
+  }
+
+  .confirmBtn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+    transform: translatey(-10px);
+  }
+
+  .exitBtn {
+    font-weight: 800;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 2.2rem;
+    width: 8rem;
+    max-width: 14rem; /* Adjust the max-width as needed */
+    border: none;
+    margin: auto; /* Center the button */
+    cursor: pointer;
+    display: block;
+    margin-top: -1.2rem;
+    margin-left: 73.9rem;
+    border-radius: 1rem;
+
+    /*this effect works to trasition the button of your */
+    transition-property: transform; 
+    transition-duration: 0.5s; 
+    transition-timing-function: ease ;
+    transition-delay: 0s;
+ }
+
+  .exitBtn:hover {
+    color: rgb(255, 255, 255);
+    background-color: #ff0000;
+    transform: translatex(-10px);
+    
+  }
+
+  .position img {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    width: 25rem;
+    border-radius: 3rem;
+  }
+
+  h1{
+    margin-top: -21rem;
+    margin-left: 23rem;
+    font-weight:600;
+    font-size: 2.5rem;
+  }
+
+  .a{
+    margin-left: 53rem;
+    padding-top: 5rem;
+    font-weight: 400;
+  }
+
+  .a:hover{
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .a2{
+    margin-top: 5rem;
+    margin-left: 68rem;
+  }
+
+  .container{
+    margin-top: 10rem;
+  }
+
+  .box44 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-right: .3rem; /* Add margin for spacing between boxes */
+    background-color: #da8d00;
+    margin-top: 2rem;
+    margin-left: 35.5rem;
+  }
+
+  .box44 img{
+    margin-top: .5rem;
+    margin-left: .3rem;
+  }
+
+  .box44:hover{
+    background-color: #130f09;
+    cursor: pointer;
+  }
+
+  .box45 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-right: .3rem; /* Add margin for spacing between boxes */
+    background-color: #da2c00;
+    margin-top: -2rem;
+    margin-left: 37.8rem;
+  }
+
+  .box45 img{
+    margin-top: .4rem;
+    margin-left: .4rem;
+  }
+
+  .box45:hover{
+    background-color: #130f09;
+    cursor: pointer;
+  }
+
+  .box46 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-right: .3rem; /* Add margin for spacing between boxes */
+    background-color: #9586e9;
+    margin-top: -2rem;
+    margin-left: 40.2rem;
+  }
+
+  .box46 img{
+    margin-top: .3rem;
+    margin-left: .2rem;
+  }
+
+  .box46:hover{
+    background-color: #130f09;
+    cursor: pointer;
+  }
+
+  .box47 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-right: .3rem; /* Add margin for spacing between boxes */
+    background-color: #570b53;
+    margin-top: -2rem;
+    margin-left: 42.5rem;
+  }
+
+  .box47 img{
+    margin-top: .1rem;
+    margin-left: .1rem;
+  }
+
+  .box47:hover{
+    background-color: #000000;
+    cursor: pointer;
+  }
+
+  @media (max-width: 405px){  //anything more than 405, the following is implemented 
+    .logo img {
+      width: 20rem;
+      max-width: 20rem;
+    }
+  
+    .place h1 { /* Corrected selector */
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }

@@ -1,0 +1,30 @@
+<div class="wrapper">
+
+    <button class="exitBtn" routerLink="/" (click)="openSpinner()">exit</button>
+
+    <div class="position">
+        <img [src]=gifUrl alt="Your GIF" />
+      </div>
+
+      <h1 align="center">
+        Your Order Is on the Way. 
+        Enjoy
+      </h1>
+      <p class="a" (click)="openDialog2()"><u>Give Us Your Feedback On Us</u></p>
+    <button class="confirmBtn" routerLink="/orders">order so more hey!!!</button>
+
+    <div class="box44"><a href="https://www.youtube.com/watch?v=yoVsoJ8ulBE"><img src="assets/images/icons/Group (2).png" alt=""></a></div>
+    <div class="box45"><a href="https://www.instagram.com/princemphomsimango?igsh=eDl4dWFyYjZ1eXdr"><img src="assets/images/icons/Group.png" alt=""></a></div>
+    <div class="box46"><a href="mailto:princemsimango27@gmail.com"><img src="assets/images/icons/icons8-email-24.png" alt=""></a></div>
+    <div class="box47"><a href="https://www.linkedin.com/in/prince-mpho-msimango-26b3b6282/"><img src="assets/images/icons/icons8-linkedin-30.png" alt=""></a></div>
+    
+    <ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-running-dots"
+>
+<p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+</div>

@@ -1,0 +1,58 @@
+<div class="box">
+  <div class="position">
+    <h2>
+      ✔ ADD YOUR OWN CHOICE OF ITEMS <br />
+      SO WE CAN HAVE YOUR FAVOURITES <br />
+      INSTEAD ❤
+    </h2>
+
+    <!-- Update the input type to 'file' and handle the change event -->
+    <input
+      #fileInput
+      placeholder="Image Path"
+      class="imagePath"
+      type="file"
+      (change)="handleFileInput($event)"
+    />
+    <br />
+
+    <input [(ngModel)]="itemName" placeholder="Item Name" class="itemName" />
+    <br />
+    <input [(ngModel)]="itemPrice" placeholder="Item Price" class="itemPrice" />
+    <br />
+    <br />
+    <input
+      [(ngModel)]="boxColor"
+      placeholder="Box Color"
+      class="boxColor"
+      type="color"
+    />
+    <br /><br /><br />
+    <div class="box17"></div>
+
+    <div class="moveup">
+    <button (click)="addItem()" [disabled]="itemPrice.length == 0">
+      Add Item
+    </button>
+  </div>
+
+  <div class="movepu2">
+  <p>( click the box to choose <br> color )</p>
+</div>
+  
+
+    <div class="place">
+      <br /><br />
+      <!-- Display a preview of the selected image -->
+      <img
+        *ngIf="imagePath"
+        [src]="imagePath"
+        alt="Selected Image"
+        class="imgpath"
+      />
+    </div>
+    <!-- Optional: you had an extra input without ngModel, which I removed -->
+  </div>
+
+  <!-- Button to add the item -->
+</div>

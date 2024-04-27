@@ -1,0 +1,94 @@
+.box{
+    width: 60rem;
+    height: 36rem;
+    background-color: #5c0156;
+    overflow-y: hidden;
+    
+}
+
+h2{
+    padding-top: 3rem;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.position{
+    margin-left: 5rem;
+}
+
+.place img{
+    max-width:15rem;
+    border-radius: 3rem;
+}
+
+ .boxColor{
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    outline-color:rgb(211, 135, 22) ;
+}
+
+.itemName{
+    margin-top: 1rem;
+    margin-left: 0rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline-color:rgb(211, 135, 22) ;
+}
+
+.itemPrice{
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline-color:rgb(211, 135, 22) ;
+}
+
+.imagePath{
+    padding: 1rem;
+    margin-left: 24rem;
+    margin-top: -40rem;
+}
+
+.imgpath{
+    margin-left: 26rem;
+    margin-top: -12rem;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    background-color:orange;
+    color: white;
+    margin-left: 0rem;
+    margin-top: .7rem;
+}
+
+
+button:hover{
+    background-color:rgb(56, 72, 124) ;
+
+}
+
+.moveup{
+    margin-top: -4rem;
+}
+.movepu2{
+    color: white;
+    margin-left: 7rem;
+    margin-top: -8.5rem;
+    font-size: .7rem;
+}
+
+.box17{
+    width: 23rem;
+    height: 17rem;
+    border: 2px solid rgb(255, 255, 255);
+    margin-left: 22rem;
+    margin-top: -15rem;
+}

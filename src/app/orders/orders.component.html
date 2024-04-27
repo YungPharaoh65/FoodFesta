@@ -1,0 +1,178 @@
+<div class="wrapper">
+  <button class="backbutton" routerLink="/foodcatalogue">x</button>
+
+  <!-------------------------------------------------item  box------------------------------------------------>
+  <div class="box22">
+    <div class="item-container">
+      <div class="inputbox">
+        <input
+          type="text"
+          class="itemsadded"
+          [value]="getSelectedItemsDisplay()"
+          readonly
+        />
+      </div>
+      <br /><br />
+      <div class="totalbutton">
+        <input
+          type="text"
+          class="totalOrder"
+          placeholder="Total Price of Items Ordered"
+          [value]="'R' + totalOrder"
+          readonly
+        />
+      </div>
+
+      <!-------------------------------------------------input selected that shows below------------------------------------------------>
+
+      <div class="selected-items-container">
+        <div id="selectedItems">
+          <p *ngFor="let selectedItem of selectedItems">
+            {{ selectedItem.name }} (R{{ selectedItem.price }}) -
+            {{ selectedItem.count }} times
+            <button (click)="removeItem(selectedItem)" class="removeItem">
+              x
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="enterBtn"
+    routerLink="/endpage"
+    [disabled]="selectedItems.length === 0" 
+    (click)="openSpinner()"
+  >
+    book
+  </button>
+
+  <!-------------------------------------------------scrollbar box------------------------------------------------>
+  <div class="box11">
+    <div class="box11-content">
+      <div class="moveboxes">
+        <div class="box5" (click)="addItem('Pizza', 60)">
+          <h2>Pizza</h2>
+          <div class="oval"><p class="ovaltext">R60</p></div>
+          <div class="imaginepizza">
+            <img src="assets/images/food.img/Wavy Buddies Pizza.png" alt="" />
+          </div>
+        </div>
+        <!----------------------------------------------------------------------------------------------->
+
+        <div class="box6" (click)="addItem('Tacos', 5)">
+          <h2>Tacos</h2>
+          <div class="oval"><p class="ovaltext">R5</p></div>
+          <div class="imaginepizza">
+            <img
+              src="assets/images/food.img/Wavy Buddies Tacos (1).png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------->
+
+        <div class="box7" (click)="addItem('Chicken', 770)">
+          <h2>Chicken</h2>
+          <div class="oval"><p class="ovaltext">R770</p></div>
+          <div class="imaginepizza">
+            <img src="assets/images/food.img/Wavy Buddies Chicken.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-----------------------------------------------------------------ROW 1 END----------------------------->
+
+      <div class="moveboxes">
+        <div class="box8" (click)="addItem('Burger', 56)">
+          <h2>Burger</h2>
+          <div class="oval"><p class="ovaltext">R56</p></div>
+          <div class="imaginetacos">
+            <img src="assets/images/food.img/burger.png" alt="" />
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------->
+
+        <div class="box9" (click)="addItem('HotDog', 99)">
+          <h2>HotDo</h2>
+          <div class="oval"><p class="ovaltext">R99</p></div>
+          <div class="imaginetacos">
+            <img src="assets/images/food.img/hotdog.png" alt="" />
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------->
+
+        <div class="box10" (click)="addItem('Strawberry pie', 600)">
+          <h2>Straw-b pie</h2>
+          <div class="oval"><p class="ovaltext">R600</p></div>
+          <div class="imaginetacos">
+            <img src="assets/images/food.img/pies.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-----------------------------------------------------------------------------ROW 2 END------------------------->
+
+      <!----------------------------------------------------------------------third row--------------------------------->
+
+      <div class="moveboxes">
+        <div class="box13" (click)="addItem('Sushi', 56)">
+          <h2>Sushi</h2>
+          <div class="oval"><p class="ovaltext">R56</p></div>
+          <div class="imaginetacos">
+            <img src="assets/images/food.img/sushi.png" alt="" />
+          </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------------------->
+
+        <div class="box14" (click)="addItem('Chedder', 99)">
+          <h2>Chedder</h2>
+          <div class="oval"><p class="ovaltext">R99</p></div>
+          <div class="imaginetacos">
+            <img src="assets/images/food.img/cheese.jpg" alt="" />
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------>
+
+        <div class="box15" (click)="addItem('Sandwich', 600)">
+          <h2>Sandwich</h2>
+          <div class="oval"><p class="ovaltext">R600</p></div>
+          <div class="imaginetacos">
+            <img src="assets/images/food.img/Sandwich.jpeg" />
+
+            <img [src]="imageUrl" alt="Selected Image" *ngIf="imageUrl" />
+          </div>
+        </div>
+      </div>
+
+      <!-----------------------------------------------------ADD ITEMS OF CHOICE BOX--------------------------------------------------------------->
+
+      <div class="move">
+        <div class="box16" (click)="openDialog()">
+          <h2>Add items of your choice <br />( + )</h2>
+        </div>
+      </div>
+
+      <div
+        *ngFor="let item of items$ | async"
+        class="box17"
+        [style.backgroundColor]="item.color"
+        (click)="addItem(item.name, item.price)"
+      >
+        <h2>{{ item.name }}</h2>
+        <div class="oval">
+          <p class="ovaltext">R{{ item.price }}</p>
+        </div>
+
+        <!-- Display the item's image from the popup.component -->
+        <div class="imaginetacos">
+          <img
+            [src]="item.image"
+            alt="{{ item.name }} Image"
+            *ngIf="item.image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
