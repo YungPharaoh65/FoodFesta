@@ -1,3 +1,5 @@
+# FoodFesta
+
 "FoodFesta" is an Angular-based web application designed to facilitate food ordering and customization with a user-friendly interface. Leveraging Angular's robust framework, FoodFesta provides a seamless and responsive user experience, ensuring smooth navigation and interaction for customers.
 
 The application architecture follows Angular's best practices, utilizing components, services, and modules to create a modular and maintainable codebase. Each feature of the application, such as menu browsing, order customization, and checkout, is encapsulated within Angular components, enabling easy reuse and scalability.
@@ -6,4 +8,4 @@ FoodFesta leverages Angular and SCSS to deliver a technically sophisticated yet 
 
 "FoodFesta: Where Every Bite's a Delight!" _ 
 
-# FoodFesta
+
