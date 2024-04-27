@@ -1,4 +1,4 @@
-# FoodFesta - https://yungpharaoh65.github.io/FoodFesta/❤🧢👍🏽
+# FoodFesta - https://yungpharaoh65.github.io/FoodFesta/ ❤🧢👍🏽
 
 "F🍔odFesta" is an Angular-based web application designed to facilitate food ordering and customization with a user-friendly interface. 
 Leveraging Angular's robust framework, FoodFesta provides a seamless and responsive user experience, 
@@ -8,7 +8,7 @@ The application architecture follows Angular's best practices, utilizing compone
 
 FoodFesta leverages Angular and SCSS to deliver a technically sophisticated yet user-friendly food ordering experience. By combining Angular's powerful features with SCSS's enhanced styling capabilities, FoodFesta achieves a modern and intuitive interface that caters to the needs of both users and developers alike.
 
-"FoodFesta: Where Every Bite's a Delight!" _ - https://yungpharaoh65.github.io/FoodFesta/❤🧢👍🏽
+"FoodFesta: Where Every Bite's a Delight!" _ - https://yungpharaoh65.github.io/FoodFesta/ ❤🧢👍🏽
 
 
 
